@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thee Survey Form</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<h1 id="title">Thee Survey Form</h1>
+
+<p id="description">This is a survey form, a freeCodeCamp certification project. Please fill out all the required fields.</p>
+
+<form id="survey-form">
+  <fieldset>
+    <label for="name" id="name-label">Enter Your Name:<input class="particulars" type="text" id="name" placeholder="eg. Annalise Keating" required/></label>
+
+    <label for="email" id="email-label">Enter Your Email:<input class="particulars" type="email" id="email" pattern="[a-z0-9]" placeholder="eg. annkeating5@example.com" required/></label>
+
+    <label for="number" id="number-label">Number Of People In Your Family:<input class="particulars" id="number" type="number" min="2" max="12" placeholder="eg. 8" required/></label>
+
+    <label for="dropdown">Where do you live?
+    <select class="particulars" id="dropdown" name="dropdown" required>
+      <option >(Select One)</option>
+      <option value="1">Urban</option>
+      <option value="2">Rural</option>
+      <option value="3">Suburb</option>
+      <option value="4">Metropolis</option>
+      <option value="5">Other</option> 
+    </select>
+  </label>
+ </fieldset>
+
+ <fieldset class="fieldsets-2-3">
+   <legend>Your Employment Status (required):</legend>
+  
+   <label for="employed" class="employment-status"><input class="radios" type="radio" id="employed" name="employment-status" value="employed" checked/> Employed  
+   </label>
+
+   <label for="unemployed" class="employment-status"><input class="radios" type="radio" id="unemployed" name="employment-status" value="unemployed"/> Unemployed  
+   </label>
+
+   <label for="self-employed" class="employment-status"><input class="the-radios" type="radio" id="self-employed" name="employment-status" value="self-employed"/> Self Employed
+  </label>
+</fieldset>
+
+<fieldset class="fieldsets-2-3">
+  <legend>Your level of education (select all applicable):</legend>
+  <label for="primary">
+    <input type="checkbox" name="education-level" id="primary" value="primary" checked/> Primary
+  </label>
+
+  <label for="secondary">
+    <input type="checkbox" name="education-level" id="secondary" value="secondary"/> Secondary
+  </label>
+
+  <label for="college">
+    <input type="checkbox" name="education-level" id="college" value="college"/> College
+  </label>
+
+  <label for="university-undergraduate">
+    <input type="checkbox" name="education-level" id="university-undergraduate" value="university-undergraduate"/> University Undergraduate
+  </label>
+
+  <label for="university-graduate">
+    <input type="checkbox" name="education-level" id="university-graduate" value="university-graduate"/> University Graduate
+   </label>
+   </fieldset>
+
+   <label for="educational-background">Provide more educational background (optional):
+   <textarea id="educational-background" name="educational-background" rows="5" cols="40" placeholder="I began my primary education in the year..." ></textarea>
+   </label>
+
+   <button type="submit" id="submit">Submit</button>
+  </form>
+ </body>
+</html>
